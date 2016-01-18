@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="JSCalculator">
+  <meta name="author" content="helios0x92">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>JSCalculator</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="core-container">
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">JSCalculator</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li><a href="https://github.com/helios0x92/JSCalculator" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner core">
+          <h1 class="core-heading">Ah Math! <span style="color:#3366ff">Need Some help</span></h1><br/>
+
+          <div class="calculator">
+            <p id="title">Digital Calculator </p>
+
+            <br/>
+            <input type="text" readonly id="answer" />
+            <div class="row">
+              <button class="normalbutton op">1</button>
+              <button class="normalbutton op">2</button>
+              <button class="normalbutton op">3</button>
+              <button class="redButton op">+</button>
+              <button class="redButton op">-</button>
+              <button class="redButton op">*</button>
+              <button class="redButton op">/</button>
+            </div>
+            <div class="row">
+              <button class="normalbutton op">4</button>
+              <button class="normalbutton op">5</button>
+              <button class="normalbutton op">6</button>
+              <button class="redButton command" id="sign">+/-</button>
+              <button class="redButton command" id="interval">1/x</button>
+              <button class="redButton command" id="sqr">x<sup>2</sup></button>
+              <button class="redButton command" id="sqrt">&#8730</button>
+            </div>
+            <div class="row">
+              <button class="normalbutton op">7</button>
+              <button class="normalbutton op">8</button>
+              <button class="normalbutton op">9</button>
+              <button class="redButton command" id="cube">x<sup>3</sup></button>
+              <button class="redButton command" id="cbrt">&#8731</button>
+              <button class="redButton command" id="log">log</sup></button>
+              <button class="redButton command" id="exp">e<sup>x</sup></button>
+            </div>
+            <div class="row">
+              <button class="normalbutton op">.</button>
+              <button class="normalbutton op">0</button>
+              <button class="normalbutton op">%</button>
+              <button class="redButton command" id="sin">sin</button>
+              <button class="redButton command" id="cos">cos</button>
+              <button class="redButton command" id="tan">tan</button>
+              <button class="redButton command" id="pow">x<sup>y</sup></button>
+            </div>
+            <div class="row">
+              <button class="normalbutton op_bck">&#8678</button>
+              <button class="normalbutton op_clr">CLR</button>
+              <button class="redButton op_return">=</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>JSCalculator by <a href="https://twitter.com/helios0x92">@helios0x92</a> | &copy; 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="calc.js"></script>
+</body>
+</html>
